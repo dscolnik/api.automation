@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <parameter name="Mode" value="API"/>
+    <parameter name="BrowserType" value=""/>
+    <test thread-count="1" name="Test">
+        <classes>
+            <class name="org.cucumber.testrunner.TestRunner"/>
+        </classes>
+    </test>
+</suite>
