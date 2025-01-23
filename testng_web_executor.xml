@@ -5,7 +5,7 @@
     <parameter name="BrowserType" value="Chrome"/>
     <test thread-count="1" name="Test">
         <classes>
-            <class name="org.cucumber.testrunner.TestRunner"/>
+            <class name="org.cucumber.testrunner.WebTestRunner"/>
         </classes>
     </test>
 </suite>

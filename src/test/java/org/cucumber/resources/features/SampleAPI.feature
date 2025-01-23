@@ -13,6 +13,7 @@ Feature: Validate API Requests Methods
       | BaseURI                              | PathParameter | ExpectedStatusCode | ExpectedTitle |
       | https://jsonplaceholder.typicode.com | /posts        | 200                | qui est esse  |
 
+
   @API_POST
   Scenario Outline: Verify whether the new user is created successfully
     Given the base URI is set to "<BaseURI>"
@@ -28,6 +29,7 @@ Feature: Validate API Requests Methods
       | BaseURI                              | PathParameter | ExpectedStatusCode | JSONBody                                                           | Title | Body | UserID | ID  |
       | https://jsonplaceholder.typicode.com | /posts        | 201                | src//test//java//org//cucumber//resources//testdata//postBody.json | foo   | bar  | 120789 | 101 |
 
+
   @API_PUT
   Scenario Outline: Verify whether the existing user details updated successfully
     Given the base URI is set to "<BaseURI>"
@@ -42,6 +44,7 @@ Feature: Validate API Requests Methods
     Examples:
       | BaseURI                              | PathParameter | ExpectedStatusCode | JSONBody                                                          | Title | Body | UserID | ID |
       | https://jsonplaceholder.typicode.com | /posts/1      | 200                | src//test//java//org//cucumber//resources//testdata//putBody.json | foo   | baz  | 120789 | 1  |
+
 
   @API_PATCH
   Scenario Outline: Verify whether the existing user specific field details updated successfully

@@ -3,12 +3,12 @@ package org.cucumber.stepdefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.cucumber.testrunner.TestRunner;
+import org.cucumber.testrunner.WebTestRunner;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
-public class WebStepDefinitions extends TestRunner {
+public class WebStepDefinitions extends WebTestRunner {
 
     @Given("launch application singup page")
     public void launchApplicationSingUpPage() {

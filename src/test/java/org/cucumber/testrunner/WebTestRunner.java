@@ -14,11 +14,11 @@ import java.net.MalformedURLException;
         features = "src//test//java//org//cucumber//resources//features",
         glue = {"org.cucumber.stepdefinitions"},
         plugin = {"pretty", "html:output/html-report.html"},
-        tags = "@ExecuteAll_API",
+        tags = "@ExecuteAll_Web",
         monochrome = true
 )
 
-public class TestRunner extends AbstractTestNGCucumberTests {
+public class WebTestRunner extends AbstractTestNGCucumberTests {
 
     public static WebDriver driver;
 
@@ -32,7 +32,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
     }
 
     @AfterTest
-    public void generateExtendReport() {
+    public void tearDown() {
         if(driver != null) {
             driver.close();
             driver.quit();
