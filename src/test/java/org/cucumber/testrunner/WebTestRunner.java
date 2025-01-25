@@ -34,7 +34,6 @@ public class WebTestRunner extends AbstractTestNGCucumberTests {
     @AfterTest
     public void tearDown() {
         if(driver != null) {
-            driver.close();
             driver.quit();
         }
     }
